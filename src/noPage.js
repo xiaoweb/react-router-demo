@@ -1,9 +1,10 @@
 import React from 'react'
+import {connect} from 'react-redux'
 
-const NoPage  = ()=>(
+const NoPage = (props) => (
     <div>
-        找不到页面
+        {props.noPage}
     </div>
 )
 
-export default NoPage
+export default connect(state => state.app)(NoPage)

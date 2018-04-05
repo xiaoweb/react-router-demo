@@ -1,0 +1,1 @@
+export const CHANGE_HOME_NAME = 'CHANGE_HOME_NAME';
