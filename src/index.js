@@ -6,7 +6,7 @@ import { connect, Provider } from 'react-redux'
 import {combineReducers} from 'redux'
 import * as reducer from './redux/reducer'
 import asyncComonent from './asyncComonent'
-
+import {Button} from 'antd-mobile';
 
 const store = createStore(combineReducers(reducer));
 const Home = asyncComonent(()=>(import('./home')));
@@ -20,6 +20,7 @@ class App extends React.Component{
         return <div>
             <Router>
                 <div>
+                    <Button>111111</Button>
                     <ul>
 
                         <li>
